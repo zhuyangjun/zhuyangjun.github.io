@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hexo-theme-pure-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/themes/hexo-theme-pure-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
