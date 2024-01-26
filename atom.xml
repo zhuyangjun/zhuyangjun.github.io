@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>云栈</title>
+  
+  <subtitle>欢迎进入我的博客，请在留言板上留下您的足迹~</subtitle>
+  <link href="http://zhuyangjun.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://zhuyangjun.github.io/"/>
+  <updated>2024-01-26T12:54:10.418Z</updated>
+  <id>http://zhuyangjun.github.io/</id>
+  
+  <author>
+    <name>Mr Zhu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flowable表结构介绍</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/gong-zuo-liu/flowable/flowable-biao-jie-gou/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/gong-zuo-liu/flowable/flowable-biao-jie-gou/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T12:54:10.418Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;flowable表结构&quot;&gt;&lt;a href=&quot;#flowable表结构&quot; class=&quot;headerlink&quot; title=&quot;flowable表结构&quot;&gt;&lt;/a&gt;flowable表结构&lt;/h2&gt;&lt;h3 id=&quot;一、表结构详解&quot;&gt;&lt;a href=&quot;#一、表结构详解&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Flowable" scheme="http://zhuyangjun.github.io/categories/Flowable/"/>
+    
+    
+    <category term="Flowable" scheme="http://zhuyangjun.github.io/tags/Flowable/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式之简单工厂模式</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/01-she-ji-mo-shi/02-jian-dan-gong-han-mo-shi/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/01-she-ji-mo-shi/02-jian-dan-gong-han-mo-shi/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T13:04:33.045Z</updated>
+    
+    
+    
+    
+    <category term="设计模式" scheme="http://zhuyangjun.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://zhuyangjun.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城之问题集</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/01-feign-jin-xing-yuan-cheng-diao-yong-diu-shi-qing-qiu-tou-xin-xi/feign-jin-xing-yuan-cheng-diao-yong-diu-shi-qing-qiu-tou-wen-ti/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/01-feign-jin-xing-yuan-cheng-diao-yong-diu-shi-qing-qiu-tou-xin-xi/feign-jin-xing-yuan-cheng-diao-yong-diu-shi-qing-qiu-tou-wen-ti/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T12:54:10.395Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;feign进行远程调用丢失请求头问题&quot;&gt;&lt;a href=&quot;#feign进行远程调用丢失请求头问题&quot; class=&quot;headerlink&quot; title=&quot;feign进行远程调用丢失请求头问题&quot;&gt;&lt;/a&gt;feign进行远程调用丢失请求头问题&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    <category term="问题集" scheme="http://zhuyangjun.github.io/tags/%E9%97%AE%E9%A2%98%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城之幂等性介绍</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/02-jie-kou-mi-deng-xing/bao-zheng-jie-kou-mi-deng-xing-jie-shao/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/02-jie-kou-mi-deng-xing/bao-zheng-jie-kou-mi-deng-xing-jie-shao/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T12:54:10.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;保证java接口幂等性介绍&quot;&gt;&lt;a href=&quot;#保证java接口幂等性介绍&quot; class=&quot;headerlink&quot; title=&quot;保证java接口幂等性介绍&quot;&gt;&lt;/a&gt;保证java接口幂等性介绍&lt;/h2&gt;&lt;h3 id=&quot;一、什么是幂等性&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城之本地锁&amp;分布式锁实现</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/02-ben-di-suo-fen-bu-shi-suo-shi-xian/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/02-ben-di-suo-fen-bu-shi-suo-shi-xian/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T13:04:33.051Z</updated>
+    
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    <category term="本地锁&amp;分布式锁实现" scheme="http://zhuyangjun.github.io/tags/%E6%9C%AC%E5%9C%B0%E9%94%81-%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E5%AE%9E%E7%8E%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城之Redisson介绍</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/03-redisson-jie-shao/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/03-redisson-jie-shao/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T13:02:25.462Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Redisson实现分布式锁&quot;&gt;&lt;a href=&quot;#Redisson实现分布式锁&quot; class=&quot;headerlink&quot; title=&quot;Redisson实现分布式锁&quot;&gt;&lt;/a&gt;&lt;code&gt;Redisson&lt;/code&gt;实现分布式锁&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    <category term="Redisson" scheme="http://zhuyangjun.github.io/tags/Redisson/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城之缓存</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/01-huan-cun/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/01-huan-cun/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T12:57:08.792Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、缓存&quot;&gt;&lt;a href=&quot;#一、缓存&quot; class=&quot;headerlink&quot; title=&quot;一、缓存&quot;&gt;&lt;/a&gt;一、缓存&lt;/h2&gt;&lt;h3 id=&quot;1、缓存的使用&quot;&gt;&lt;a href=&quot;#1、缓存的使用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    <category term="缓存" scheme="http://zhuyangjun.github.io/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城之MD5加密</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T12:54:10.412Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;MD5加密概述&quot;&gt;&lt;a href=&quot;#MD5加密概述&quot; class=&quot;headerlink&quot; title=&quot;MD5加密概述&quot;&gt;&lt;/a&gt;MD5加密概述&lt;/h2&gt;&lt;h3 id=&quot;MD5概述：&quot;&gt;&lt;a href=&quot;#MD5概述：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式之单例模式</title>
+    <link href="http://zhuyangjun.github.io/2024/01/25/hou-duan/01-she-ji-mo-shi/01-dan-li-mo-shi/"/>
+    <id>http://zhuyangjun.github.io/2024/01/25/hou-duan/01-she-ji-mo-shi/01-dan-li-mo-shi/</id>
+    <published>2024-01-25T14:30:00.000Z</published>
+    <updated>2024-01-25T14:30:42.052Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;单例模式&quot;&gt;&lt;a href=&quot;#单例模式&quot; class=&quot;headerlink&quot; title=&quot;单例模式&quot;&gt;&lt;/a&gt;单例模式&lt;/h2&gt;&lt;h3 id=&quot;一、介绍&quot;&gt;&lt;a href=&quot;#一、介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="设计模式" scheme="http://zhuyangjun.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="设计模式" scheme="http://zhuyangjun.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+</feed>
