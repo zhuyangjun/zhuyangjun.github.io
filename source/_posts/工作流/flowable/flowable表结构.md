@@ -1,3 +1,11 @@
+---
+title: flowable表结构介绍
+date: 2024-01-26 22:30:00
+author: Mr zhu
+categories: Flowable
+tags:
+- Flowable
+---
 ## flowable表结构
 
 ### 一、表结构详解
