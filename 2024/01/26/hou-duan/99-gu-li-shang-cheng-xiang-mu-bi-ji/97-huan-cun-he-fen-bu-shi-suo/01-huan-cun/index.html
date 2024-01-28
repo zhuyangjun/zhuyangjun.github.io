@@ -479,7 +479,7 @@
 <p><strong>哪些数据适合放入缓存？</strong> </p>
 <p><strong>即时性、数据一致性要求不高的</strong>、<strong>访问量大且更新频率不高的数据（读多，写少）</strong> </p>
 <p>举例：电商类应用，商品分类，商品列表等适合缓存并加一个失效时间(根据数据更新频率来定)，后台如果发布一个商品，买家需要 5 分钟才能看到新的商品一般还是可以接受的。</p>
-<p><img src="./../../../../images/image-20240124164625152.png" alt="image-20240124164625152"></p>
+<p><img src="/./../../../../images/image-20240124164625152.png" alt="image-20240124164625152"></p>
 <blockquote>
 <p><strong>注意：</strong>在开发中，凡是放入缓存中的数据我们都应该指定过期时间，使其可以在系统即使没有主动更新数据也能自动触发数据加载进缓存的流程。避免业务崩溃导致的数据永久不一致问题。</p>
 </blockquote>
@@ -553,9 +553,9 @@
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>具体实现可以看Redis篇</p>
-<p><img src="./../../../../images/image-20240124171644129.png" alt="image-20240124171644129"></p>
+<p><img src="/./../../../../images/image-20240124171644129.png" alt="image-20240124171644129"></p>
 <p><strong>布隆过滤器说明：</strong></p>
-<p><img src="./../../../../images/image-20240124172958789.png" alt="image-20240124172958789"></p>
+<p><img src="/./../../../../images/image-20240124172958789.png" alt="image-20240124172958789"></p>
 <h3 id="3、缓存击穿"><a href="#3、缓存击穿" class="headerlink" title="3、缓存击穿"></a>3、缓存击穿</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>对于一些设置了过期时间的key，如果这些key可能会在某些 时间点被超高并发地访问，是一种非常“热点”的数据。 </p>
 <p>如果这个key在大量请求同时进来前正好失效，那么所有对这个key的数据查询都落到db，我们称为缓存击穿。</p>
 <h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><strong><code>解决方案：</code></strong></h5><ul>
@@ -568,7 +568,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="加锁时序："><a href="#加锁时序：" class="headerlink" title="加锁时序："></a>加锁时序：</h4><p><img src="./../../../../images/image-20240125101044292.png" alt="image-20240125101044292"></p>
+<h4 id="加锁时序："><a href="#加锁时序：" class="headerlink" title="加锁时序："></a>加锁时序：</h4><p><img src="/./../../../../images/image-20240125101044292.png" alt="image-20240125101044292"></p>
 <h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><h5 id="本地锁"><a href="#本地锁" class="headerlink" title="本地锁"></a><strong>本地锁</strong></h5><p><code>不使用于分布式系统</code></p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">String</span> key<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
     <span class="token comment">//先查缓存</span>
@@ -593,7 +593,7 @@
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="分布式锁实现"><a href="#分布式锁实现" class="headerlink" title="分布式锁实现"></a><strong>分布式锁实现</strong></h5><h2 id="三、分布式锁演进"><a href="#三、分布式锁演进" class="headerlink" title="三、分布式锁演进"></a>三、分布式锁演进</h2><h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a><strong>基本原理</strong></h3><p><img src="./../../../../images/image-20240125105014786.png" alt="image-20240125105014786"></p>
+<h5 id="分布式锁实现"><a href="#分布式锁实现" class="headerlink" title="分布式锁实现"></a><strong>分布式锁实现</strong></h5><h2 id="三、分布式锁演进"><a href="#三、分布式锁演进" class="headerlink" title="三、分布式锁演进"></a>三、分布式锁演进</h2><h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a><strong>基本原理</strong></h3><p><img src="/./../../../../images/image-20240125105014786.png" alt="image-20240125105014786"></p>
 <p>我们可以同时去一个地方“占坑”，如果占到，就执行逻辑。否则就必须等待，直到释放锁。 </p>
 <p>“占坑”可以去redis，可以去数据库，可以去任何大家都能访问的地方。 </p>
 <p>等待可以<strong>自旋</strong>的方式</p>
@@ -611,7 +611,7 @@
         <span class="token keyword">return</span> value<span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="阶段一"><a href="#阶段一" class="headerlink" title="阶段一"></a>阶段一</h3><h4 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h4><p><img src="./../../../../images/image-20240125124856002.png" alt="image-20240125124856002"></p>
+<h3 id="阶段一"><a href="#阶段一" class="headerlink" title="阶段一"></a>阶段一</h3><h4 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h4><p><img src="/./../../../../images/image-20240125124856002.png" alt="image-20240125124856002"></p>
 <h4 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
  * 分布式锁——阶段一
  * @return
@@ -636,7 +636,7 @@
 
 <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>setnx占好了位，业务代码异常或者程序在页面过程中宕机。没有执行删除锁逻辑，这就造成了<strong>死锁</strong> </p>
 <h4 id="解决："><a href="#解决：" class="headerlink" title="解决："></a><strong>解决：</strong></h4><p>设置锁的自动过期，即使没有删除，会自动删除。<code>===&gt;阶段二</code></p>
-<h3 id="阶段二"><a href="#阶段二" class="headerlink" title="阶段二"></a>阶段二</h3><h4 id="流程图-1"><a href="#流程图-1" class="headerlink" title="流程图"></a>流程图</h4><p><img src="./../../../../images/image-20240125130200398.png" alt="image-20240125130200398"></p>
+<h3 id="阶段二"><a href="#阶段二" class="headerlink" title="阶段二"></a>阶段二</h3><h4 id="流程图-1"><a href="#流程图-1" class="headerlink" title="流程图"></a>流程图</h4><p><img src="/./../../../../images/image-20240125130200398.png" alt="image-20240125130200398"></p>
 <h4 id="实现-1"><a href="#实现-1" class="headerlink" title="实现"></a>实现</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
  * 分布式锁——阶段二
  * @return
@@ -663,7 +663,7 @@
 
 <h4 id="问题-1"><a href="#问题-1" class="headerlink" title="问题"></a>问题</h4><p>setnx设置好，正要去设置过期时间，宕机。又死锁了。</p>
 <h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>设置过期时间和占位必须是原子的。redis支持使用setnx ex 命令    <code>====&gt;阶段3</code></p>
-<h3 id="阶段三"><a href="#阶段三" class="headerlink" title="阶段三"></a>阶段三</h3><h4 id="流程图-2"><a href="#流程图-2" class="headerlink" title="流程图"></a>流程图</h4><p><img src="./../../../../images/image-20240125131058287.png" alt="image-20240125131058287"></p>
+<h3 id="阶段三"><a href="#阶段三" class="headerlink" title="阶段三"></a>阶段三</h3><h4 id="流程图-2"><a href="#流程图-2" class="headerlink" title="流程图"></a>流程图</h4><p><img src="/./../../../../images/image-20240125131058287.png" alt="image-20240125131058287"></p>
 <h4 id="实现-2"><a href="#实现-2" class="headerlink" title="实现"></a>实现</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
  * 分布式锁——阶段三
  * @return
@@ -690,7 +690,7 @@
 
 <h4 id="问题-2"><a href="#问题-2" class="headerlink" title="问题"></a>问题</h4><p>如果由于业务时间很长，锁自己过期了，我们直接删除，有可能把别人正在持有的锁删除了。 </p>
 <h4 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h4><p>占锁的时候，值指定为<code>uuid</code>，每个人匹配是自己的锁才删除。<code>====&gt;阶段4</code></p>
-<h3 id="阶段四"><a href="#阶段四" class="headerlink" title="阶段四"></a>阶段四</h3><h4 id="流程图-3"><a href="#流程图-3" class="headerlink" title="流程图"></a>流程图</h4><p><img src="./../../../../images/image-20240125132309172.png" alt="image-20240125132309172"></p>
+<h3 id="阶段四"><a href="#阶段四" class="headerlink" title="阶段四"></a>阶段四</h3><h4 id="流程图-3"><a href="#流程图-3" class="headerlink" title="流程图"></a>流程图</h4><p><img src="/./../../../../images/image-20240125132309172.png" alt="image-20240125132309172"></p>
 <h4 id="实现-3"><a href="#实现-3" class="headerlink" title="实现"></a>实现</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
  * 分布式锁——阶段四
  * @return
@@ -723,7 +723,7 @@
 
 <h4 id="问题-3"><a href="#问题-3" class="headerlink" title="问题"></a>问题</h4><p>如果正好判断是当前值，正要删除锁的时候，锁已经过期， 别人已经设置到了新的值。那么我们删除的是别人的锁</p>
 <h4 id="解决-2"><a href="#解决-2" class="headerlink" title="解决"></a>解决</h4><p>验证锁和删除锁的操作必须保证原子性。使用redis+Lua脚本完成。<code>====&gt;阶段五，最终版本</code></p>
-<h3 id="阶段五"><a href="#阶段五" class="headerlink" title="阶段五"></a>阶段五</h3><h4 id="流程图-4"><a href="#流程图-4" class="headerlink" title="流程图"></a>流程图</h4><p><img src="./../../../../images/image-20240125133456586.png" alt="image-20240125133456586"></p>
+<h3 id="阶段五"><a href="#阶段五" class="headerlink" title="阶段五"></a>阶段五</h3><h4 id="流程图-4"><a href="#流程图-4" class="headerlink" title="流程图"></a>流程图</h4><p><img src="/./../../../../images/image-20240125133456586.png" alt="image-20240125133456586"></p>
 <p><strong>lua脚本：</strong></p>
 <p><code>if redis.call(&#39;get&#39;, KEYS[1]) == ARGV[1] then return redis.call(&#39;del&#39;, KEYS[1]) else return 0 end</code></p>
 <h4 id="实现-4"><a href="#实现-4" class="headerlink" title="实现"></a>实现</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
@@ -1047,13 +1047,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/03-redisson-jie-shao/">
+                <a href="/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="谷粒商城之Redisson介绍">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="谷粒商城之MD5加密">
                         
-                        <span class="card-title">谷粒商城之Redisson介绍</span>
+                        <span class="card-title">谷粒商城之MD5加密</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1085,10 +1085,6 @@
                         <span class="chip bg-color">谷粒商城</span>
                     </a>
                     
-                    <a href="/tags/Redisson/">
-                        <span class="chip bg-color">Redisson</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1100,13 +1096,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/">
+                <a href="/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/02-ben-di-suo-fen-bu-shi-suo-shi-xian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="谷粒商城之MD5加密">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="谷粒商城之本地锁&amp;分布式锁实现">
                         
-                        <span class="card-title">谷粒商城之MD5加密</span>
+                        <span class="card-title">谷粒商城之本地锁&amp;分布式锁实现</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1136,6 +1132,10 @@
                     
                     <a href="/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/">
                         <span class="chip bg-color">谷粒商城</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9C%AC%E5%9C%B0%E9%94%81-%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E5%AE%9E%E7%8E%B0/">
+                        <span class="chip bg-color">本地锁&amp;分布式锁实现</span>
                     </a>
                     
                 </div>
@@ -1335,7 +1335,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">15.9k</span>&nbsp;字
+                class="white-color">27.1k</span>&nbsp;字
             
             
             

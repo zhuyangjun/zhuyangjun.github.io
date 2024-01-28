@@ -692,12 +692,12 @@
    <span class="token punctuation">&#125;</span>		<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="2、部署流程涉及到的表"><a href="#2、部署流程涉及到的表" class="headerlink" title="2、部署流程涉及到的表"></a>2、部署流程涉及到的表</h4><h5 id="act-ge-bytearray"><a href="#act-ge-bytearray" class="headerlink" title="act_ge_bytearray"></a>act_ge_bytearray</h5><p>部署资源表</p>
-<p><img src="./../../../images/image-20240114171129966.png" alt="image-20240114171129966"></p>
+<p><img src="/./../../../images/image-20240114171129966.png" alt="image-20240114171129966"></p>
 <h5 id="act-re-deployment"><a href="#act-re-deployment" class="headerlink" title="act_re_deployment"></a>act_re_deployment</h5><p>流程部署表</p>
-<p><img src="./../../../images/image-20240114171526850.png" alt="image-20240114171526850"></p>
+<p><img src="/./../../../images/image-20240114171526850.png" alt="image-20240114171526850"></p>
 <h5 id="act-re-procdef"><a href="#act-re-procdef" class="headerlink" title="act_re_procdef"></a>act_re_procdef</h5><p>流程定义表</p>
-<p><img src="./../../../images/image-20240114172138793.png" alt="image-20240114172138793"></p>
-<p><img src="./../../../images/image-20240114172501249.png" alt="image-20240114172501249"></p>
+<p><img src="/./../../../images/image-20240114172138793.png" alt="image-20240114172138793"></p>
+<p><img src="/./../../../images/image-20240114172501249.png" alt="image-20240114172501249"></p>
 <p>注意：<br>业务流程定义数据表。此表和ACT_RE_DEPLOYMENT是多对一的关系，即，一个部署的bar包里可能包含多个流程定义文件，每个流程定义文件都会有一条记录在ACT_REPROCDEF表内，每个流程定义的数据，都会对于ACT_GE_BYTEARRAY表内的一个资源文件和PNG图片文件。和ACT_GE_BYTEARRAY的关联是通过程序用ACT_GE_BYTEARRAY.NAME与ACT_RE_PROCDEF.NAME_完成的</p>
 <h5 id="挂起和激活流程"><a href="#挂起和激活流程" class="headerlink" title="挂起和激活流程"></a>挂起和激活流程</h5><p>部署的流程默认的状态为激活，如果我们暂时不想使用该定义的流程，那么可以挂起该流程。当然该流程定义下边所有的流程实例全部暂停。</p>
 <p>流程定义为挂起状态，该流程定义将不允许启动新的流程实例，同时该流程定义下的所有的流程实例都将全部挂起暂停执行。</p>
@@ -729,7 +729,7 @@
 
 <p>具体的实现其实就是更新了流程定义表中的字段</p>
 <p>而且通过REV_字段来控制数据安全，也是一种乐观锁的体现了，如果要启动一个已经挂起的流程就会出现如下的错误</p>
-<p><img src="./../../../images/image-20240114172759582.png" alt="image-20240114172759582"></p>
+<p><img src="/./../../../images/image-20240114172759582.png" alt="image-20240114172759582"></p>
 <h3 id="三、启动流程相关表"><a href="#三、启动流程相关表" class="headerlink" title="三、启动流程相关表"></a>三、启动流程相关表</h3><h4 id="1、启动流程"><a href="#1、启动流程" class="headerlink" title="1、启动流程"></a>1、启动流程</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
     * 启动流程实例
     */</span>
@@ -767,15 +767,15 @@
 <li>ACT_RU_TIMER_JOB 定时作业表</li>
 <li>ACT_RU_VARIABLE 运行时变量表</li>
 </ol>
-<h5 id="act-ru-execution"><a href="#act-ru-execution" class="headerlink" title="act_ru_execution"></a>act_ru_execution</h5><p><img src="./../../../images/image-20240114174234349.png" alt="image-20240114174234349"></p>
+<h5 id="act-ru-execution"><a href="#act-ru-execution" class="headerlink" title="act_ru_execution"></a>act_ru_execution</h5><p><img src="/./../../../images/image-20240114174234349.png" alt="image-20240114174234349"></p>
 <p>ACT_ID对应：</p>
-<p><img src="./assets/image-20240114174326163.png" alt="image-20240114174326163"></p>
+<p><img src="/./assets/image-20240114174326163.png" alt="image-20240114174326163"></p>
 <h5 id="act-ru-task"><a href="#act-ru-task" class="headerlink" title="act_ru_task"></a>act_ru_task</h5><p>运行时任务表</p>
-<p><img src="./../../../images/image-20240114212945975.png" alt="image-20240114212945975"></p>
+<p><img src="/./../../../images/image-20240114212945975.png" alt="image-20240114212945975"></p>
 <h5 id="act-ru-variable"><a href="#act-ru-variable" class="headerlink" title="act_ru_variable"></a>act_ru_variable</h5><p>运行时变量表</p>
-<p><img src="./../../../images/image-20240114213313304.png" alt="image-20240114213313304"></p>
+<p><img src="/./../../../images/image-20240114213313304.png" alt="image-20240114213313304"></p>
 <h5 id="act-ru-identitylink"><a href="#act-ru-identitylink" class="headerlink" title="act_ru_identitylink"></a>act_ru_identitylink</h5><p>运行时用户关系信息</p>
-<p><img src="./../../../images/image-20240114213626047.png" alt="image-20240114213626047"></p>
+<p><img src="/./../../../images/image-20240114213626047.png" alt="image-20240114213626047"></p>
 <h3 id="四、处理流程"><a href="#四、处理流程" class="headerlink" title="四、处理流程"></a>四、处理流程</h3><p>流程流转到zhangsan，可以进行完成任务操作</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
     * 完成任务
@@ -817,7 +817,7 @@
 <li>ACT_HI_VARINST 历史的流程运行中的变量信息</li>
 </ol>
 <h5 id="act-hi-actinst"><a href="#act-hi-actinst" class="headerlink" title="act_hi_actinst"></a>act_hi_actinst</h5><p>历史的流程实例</p>
-<p><img src="./../../../images/image-20240114215533396.png" alt="image-20240114215533396"></p>
+<p><img src="/./../../../images/image-20240114215533396.png" alt="image-20240114215533396"></p>
 <h5 id="act-hi-taskinst"><a href="#act-hi-taskinst" class="headerlink" title="act_hi_taskinst"></a>act_hi_taskinst</h5><p>历史的任务实例</p>
 <h5 id="act-hi-varinst"><a href="#act-hi-varinst" class="headerlink" title="act_hi_varinst"></a>act_hi_varinst</h5><p>历史的流程运行中的变量信息：流程变量虽然在任务完成后在流程实例表中会删除，但是在历史表中还是会记录的</p>
 
@@ -1055,60 +1055,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
-            <div class="card">
-                <a href="/2024/01/26/gong-zuo-liu/flowable/flowable-biao-jie-gou/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="flowable表结构介绍">
-                        
-                        <span class="card-title">flowable表结构介绍</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-26
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Flowable/" class="post-category">
-                                    Flowable
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Flowable/">
-                        <span class="chip bg-color">Flowable</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2024/01/26/hou-duan/01-she-ji-mo-shi/02-jian-dan-gong-han-mo-shi/">
                     <div class="card-image">
@@ -1126,9 +1075,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-26
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-26
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1146,6 +1095,59 @@
                     
                     <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
                         <span class="chip bg-color">设计模式</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/01-feign-jin-xing-yuan-cheng-diao-yong-diu-shi-qing-qiu-tou-xin-xi/feign-jin-xing-yuan-cheng-diao-yong-diu-shi-qing-qiu-tou-wen-ti/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="谷粒商城之问题集">
+                        
+                        <span class="card-title">谷粒商城之问题集</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/" class="post-category">
+                                    谷粒商城
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/">
+                        <span class="chip bg-color">谷粒商城</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%97%AE%E9%A2%98%E9%9B%86/">
+                        <span class="chip bg-color">问题集</span>
                     </a>
                     
                 </div>
@@ -1345,7 +1347,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">15.9k</span>&nbsp;字
+                class="white-color">27.1k</span>&nbsp;字
             
             
             

@@ -6,7 +6,7 @@
   <link href="http://zhuyangjun.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhuyangjun.github.io/"/>
-  <updated>2024-01-26T12:54:10.418Z</updated>
+  <updated>2023-12-11T05:00:52.000Z</updated>
   <id>http://zhuyangjun.github.io/</id>
   
   <author>
@@ -17,27 +17,187 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>flowable表结构介绍</title>
-    <link href="http://zhuyangjun.github.io/2024/01/26/gong-zuo-liu/flowable/flowable-biao-jie-gou/"/>
-    <id>http://zhuyangjun.github.io/2024/01/26/gong-zuo-liu/flowable/flowable-biao-jie-gou/</id>
-    <published>2024-01-26T14:30:00.000Z</published>
-    <updated>2024-01-26T12:54:10.418Z</updated>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/optional-de-shi-yong/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/optional-de-shi-yong/</id>
+    <published>2024-01-28T14:12:42.577Z</published>
+    <updated>2023-12-11T05:00:52.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;flowable表结构&quot;&gt;&lt;a href=&quot;#flowable表结构&quot; class=&quot;headerlink&quot; title=&quot;flowable表结构&quot;&gt;&lt;/a&gt;flowable表结构&lt;/h2&gt;&lt;h3 id=&quot;一、表结构详解&quot;&gt;&lt;a href=&quot;#一、表结构详解&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;从 Java 8 引入的一个很有趣的特性是 Optional 类。Optional</summary>
         
       
     
     
     
-    <category term="Flowable" scheme="http://zhuyangjun.github.io/categories/Flowable/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/lambda-biao-da-shi/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/lambda-biao-da-shi/</id>
+    <published>2024-01-28T14:12:42.570Z</published>
+    <updated>2023-12-12T07:24:22.000Z</updated>
     
     
-    <category term="Flowable" scheme="http://zhuyangjun.github.io/tags/Flowable/"/>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Lambda表达式&quot;&gt;&lt;a href=&quot;#一、Lambda表达式&quot; class=&quot;headerlink&quot; title=&quot;一、Lambda表达式&quot;&gt;&lt;/a&gt;一、Lambda表达式&lt;/h2&gt;&lt;h3 id=&quot;1、lambda表达式的组成&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/java8-xin-te-xing/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/java8-xin-te-xing/</id>
+    <published>2024-01-28T14:12:42.559Z</published>
+    <updated>2023-11-16T09:19:20.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Lambda表达式&quot;&gt;&lt;a href=&quot;#一、Lambda表达式&quot; class=&quot;headerlink&quot; title=&quot;一、Lambda表达式&quot;&gt;&lt;/a&gt;一、Lambda表达式&lt;/h2&gt;&lt;h3 id=&quot;1、lambda表达式的组成&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/stream-liu/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/07-java8-xin-te-xing/stream-liu/</id>
+    <published>2024-01-28T14:12:42.555Z</published>
+    <updated>2023-10-17T05:00:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Stream流&quot;&gt;&lt;a href=&quot;#Stream流&quot; class=&quot;headerlink&quot; title=&quot;Stream流&quot;&gt;&lt;/a&gt;Stream流&lt;/h3&gt;&lt;h4 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/03-java-ji-he/list-de-xiang-guan-zhi-shi/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/03-java-ji-he/list-de-xiang-guan-zhi-shi/</id>
+    <published>2024-01-28T14:12:42.428Z</published>
+    <updated>2023-10-17T05:00:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、数组转List的四种方式总结&quot;&gt;&lt;a href=&quot;#一、数组转List的四种方式总结&quot; class=&quot;headerlink&quot; title=&quot;一、数组转List的四种方式总结&quot;&gt;&lt;/a&gt;一、数组转List的四种方式总结&lt;/h3&gt;&lt;h4</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/02-mei-ju-lei-he-zhu-jie/mei-ju-lei-xiang-guan-ying-yong/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/02-mei-ju-lei-he-zhu-jie/mei-ju-lei-xiang-guan-ying-yong/</id>
+    <published>2024-01-28T14:12:42.392Z</published>
+    <updated>2023-10-17T05:00:32.000Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/02-mei-ju-lei-he-zhu-jie/mei-ju-lei-xue-xi/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/02-java-gao-ji/02-mei-ju-lei-he-zhu-jie/mei-ju-lei-xue-xi/</id>
+    <published>2024-01-28T14:12:42.383Z</published>
+    <updated>2023-10-17T05:00:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Enum（枚举类）&quot;&gt;&lt;a href=&quot;#Enum（枚举类）&quot; class=&quot;headerlink&quot; title=&quot;Enum（枚举类）&quot;&gt;&lt;/a&gt;Enum（枚举类）&lt;/h2&gt;&lt;h3 id=&quot;一、什么情况下使用枚举类&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/04-json-de-shi-yong/fastjson-de-shi-yong/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/04-json-de-shi-yong/fastjson-de-shi-yong/</id>
+    <published>2024-01-28T14:12:42.253Z</published>
+    <updated>2023-10-17T05:00:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;fastjson的使用&quot;&gt;&lt;a href=&quot;#fastjson的使用&quot; class=&quot;headerlink&quot; title=&quot;fastjson的使用&quot;&gt;&lt;/a&gt;&lt;code&gt;fastjson&lt;/code&gt;的使用&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java学习</title>
+    <link href="http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/java/"/>
+    <id>http://zhuyangjun.github.io/2024/01/28/hou-duan/02-java-xue-xi/java/</id>
+    <published>2024-01-28T13:30:00.000Z</published>
+    <updated>2024-01-28T14:26:17.625Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、java基础知识&quot;&gt;&lt;a href=&quot;#一、java基础知识&quot; class=&quot;headerlink&quot; title=&quot;一、java基础知识&quot;&gt;&lt;/a&gt;一、&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="http://zhuyangjun.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="http://zhuyangjun.github.io/tags/Java/"/>
     
   </entry>
   
@@ -55,6 +215,31 @@
     
     
     <category term="设计模式" scheme="http://zhuyangjun.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>flowable表结构介绍</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/gong-zuo-liu/flowable/flowable-biao-jie-gou/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/gong-zuo-liu/flowable/flowable-biao-jie-gou/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-28T14:22:37.441Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;flowable表结构&quot;&gt;&lt;a href=&quot;#flowable表结构&quot; class=&quot;headerlink&quot; title=&quot;flowable表结构&quot;&gt;&lt;/a&gt;flowable表结构&lt;/h2&gt;&lt;h3 id=&quot;一、表结构详解&quot;&gt;&lt;a href=&quot;#一、表结构详解&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Flowable" scheme="http://zhuyangjun.github.io/categories/Flowable/"/>
+    
+    
+    <category term="Flowable" scheme="http://zhuyangjun.github.io/tags/Flowable/"/>
     
   </entry>
   
@@ -111,6 +296,58 @@
   </entry>
   
   <entry>
+    <title>谷粒商城之MD5加密</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T12:54:10.412Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;MD5加密概述&quot;&gt;&lt;a href=&quot;#MD5加密概述&quot; class=&quot;headerlink&quot; title=&quot;MD5加密概述&quot;&gt;&lt;/a&gt;MD5加密概述&lt;/h2&gt;&lt;h3 id=&quot;MD5概述：&quot;&gt;&lt;a href=&quot;#MD5概述：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷粒商城之缓存</title>
+    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/01-huan-cun/"/>
+    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/01-huan-cun/</id>
+    <published>2024-01-26T14:30:00.000Z</published>
+    <updated>2024-01-26T12:57:08.792Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、缓存&quot;&gt;&lt;a href=&quot;#一、缓存&quot; class=&quot;headerlink&quot; title=&quot;一、缓存&quot;&gt;&lt;/a&gt;一、缓存&lt;/h2&gt;&lt;h3 id=&quot;1、缓存的使用&quot;&gt;&lt;a href=&quot;#1、缓存的使用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    
+    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
+    
+    <category term="缓存" scheme="http://zhuyangjun.github.io/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>谷粒商城之本地锁&amp;分布式锁实现</title>
     <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/02-ben-di-suo-fen-bu-shi-suo-shi-xian/"/>
     <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/02-ben-di-suo-fen-bu-shi-suo-shi-xian/</id>
@@ -153,58 +390,6 @@
     <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
     
     <category term="Redisson" scheme="http://zhuyangjun.github.io/tags/Redisson/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谷粒商城之缓存</title>
-    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/01-huan-cun/"/>
-    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/01-huan-cun/</id>
-    <published>2024-01-26T14:30:00.000Z</published>
-    <updated>2024-01-26T12:57:08.792Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、缓存&quot;&gt;&lt;a href=&quot;#一、缓存&quot; class=&quot;headerlink&quot; title=&quot;一、缓存&quot;&gt;&lt;/a&gt;一、缓存&lt;/h2&gt;&lt;h3 id=&quot;1、缓存的使用&quot;&gt;&lt;a href=&quot;#1、缓存的使用&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
-    
-    
-    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
-    
-    <category term="缓存" scheme="http://zhuyangjun.github.io/tags/%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谷粒商城之MD5加密</title>
-    <link href="http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/"/>
-    <id>http://zhuyangjun.github.io/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/</id>
-    <published>2024-01-26T14:30:00.000Z</published>
-    <updated>2024-01-26T12:54:10.412Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;MD5加密概述&quot;&gt;&lt;a href=&quot;#MD5加密概述&quot; class=&quot;headerlink&quot; title=&quot;MD5加密概述&quot;&gt;&lt;/a&gt;MD5加密概述&lt;/h2&gt;&lt;h3 id=&quot;MD5概述：&quot;&gt;&lt;a href=&quot;#MD5概述：&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/categories/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
-    
-    
-    <category term="谷粒商城" scheme="http://zhuyangjun.github.io/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/"/>
     
   </entry>
   

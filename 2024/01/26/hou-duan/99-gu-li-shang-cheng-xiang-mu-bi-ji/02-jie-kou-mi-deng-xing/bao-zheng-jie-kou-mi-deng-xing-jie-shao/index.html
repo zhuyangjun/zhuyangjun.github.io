@@ -528,7 +528,7 @@
 <p><strong>适用：</strong>插入、删除操作</p>
 <p><strong>使用限制：</strong>需要生成全局唯一ID</p>
 <p><strong>主要流程：</strong></p>
-<p><img src="./../../../../images/image-20240120150425586.png" alt="image-20240120150425586"></p>
+<p><img src="/./../../../../images/image-20240120150425586.png" alt="image-20240120150425586"></p>
 <p>① 客户端执行创建请求，调用服务端接口。</p>
 <p>② 服务端执行业务逻辑，生成一个分布式 ID，将该 ID 充当待插入数据的主键，然后执数据插入操作，运行对应的 SQL 语句。</p>
 <p>③ 服务端将该条数据插入数据库中，如果插入成功则表示没有重复调用接口。如果抛出主键重复异常，则表示数据库中已经存在该条记录，返回错误信息到客户端。</p>
@@ -536,7 +536,7 @@
 <p><strong>适用：</strong>更新操作</p>
 <p><strong>使用限制：</strong>需要在数据库业务表中增加额外字段</p>
 <p><strong>主要流程：</strong></p>
-<p><img src="./../../../../images/image-20240120151927928.png" alt="image-20240120151927928"></p>
+<p><img src="/./../../../../images/image-20240120151927928.png" alt="image-20240120151927928"></p>
 <p>为了每次执行更新时防止重复更新，确定更新的一定是要更新的内容，我们通常都会添加一个 version 字段记录当前的记录版本，这样在更新时候将该值带上，那么只要执行更新操作就能确定一定更新的是某个对应版本下的信息。这样每次执行更新时候，都要指定要更新的版本号，如下操作就能准确更新 version=5 的信息：</p>
 <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">UPDATE</span> my_table <span class="token keyword">SET</span> price<span class="token operator">=</span>price<span class="token operator">+</span><span class="token number">50</span><span class="token punctuation">,</span>version<span class="token operator">=</span>version<span class="token operator">+</span><span class="token number">1</span> <span class="token keyword">WHERE</span> id<span class="token operator">=</span><span class="token number">1</span> <span class="token operator">AND</span> version<span class="token operator">=</span><span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -546,7 +546,7 @@
 <p><strong>适用：</strong>插入、更新、删除操作</p>
 <p><strong>使用限制：</strong>需要生成全局唯一Token；需要使用第三方组件Redis进行数据校验；</p>
 <p><strong>主要流程：</strong></p>
-<p><img src="./../../../../images/image-20240120162341983.png" alt="image-20240120162341983"></p>
+<p><img src="/./../../../../images/image-20240120162341983.png" alt="image-20240120162341983"></p>
 <p>① 服务端提供获取 Token 的接口，该 Token 可以是一个序列号，也可以是一个分布式 ID 或者 UUID 串。</p>
 <p>② 客户端调用接口获取 Token，这时候服务端会生成一个 Token 串。</p>
 <p>③ 然后将该串存入 Redis 数据库中，以该 Token 作为 Redis 的键（注意设置过期时间）。</p>
@@ -567,7 +567,7 @@
 <p>2、将该字段以<code>SETNX</code>的方式存入<code>Redis</code>中，并根据业务设置相应的超时时间;</p>
 <p>3、如果设置成功，证明这是第一次请求，则执行后续的业务逻辑;</p>
 <p>4、如果设置失败，则代表已经执行过当前请求，直接返回成功。</p>
-<p><img src="./../../../../images/image-20240122124901466.png" alt="image-20240122124901466"></p>
+<p><img src="/./../../../../images/image-20240122124901466.png" alt="image-20240122124901466"></p>
 <blockquote>
 <p>需要特别注意的是：分布式锁一定要设置一个合理的过期时间，如果设置过短，无法有效的防止重复请求。如果设置过长，可能会浪费<code>redis</code>的存储空间，需要根据实际业务情况而定。</p>
 </blockquote>
@@ -896,13 +896,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/97-huan-cun-he-fen-bu-shi-suo/02-ben-di-suo-fen-bu-shi-suo-shi-xian/">
+                <a href="/2024/01/26/hou-duan/99-gu-li-shang-cheng-xiang-mu-bi-ji/96-md5/md5-jia-mi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="谷粒商城之本地锁&amp;分布式锁实现">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="谷粒商城之MD5加密">
                         
-                        <span class="card-title">谷粒商城之本地锁&amp;分布式锁实现</span>
+                        <span class="card-title">谷粒商城之MD5加密</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -932,10 +932,6 @@
                     
                     <a href="/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/">
                         <span class="chip bg-color">谷粒商城</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%9C%AC%E5%9C%B0%E9%94%81-%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E5%AE%9E%E7%8E%B0/">
-                        <span class="chip bg-color">本地锁&amp;分布式锁实现</span>
                     </a>
                     
                 </div>
@@ -1135,7 +1131,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">15.9k</span>&nbsp;字
+                class="white-color">27.1k</span>&nbsp;字
             
             
             
