@@ -8,6 +8,8 @@ tags:
 ---
 ## flowable表结构
 
+
+
 ### 一、表结构详解
 
 表的sql文件：`flowable-engine-6.3.0.jar!  \org\flowable\db\create\flowable.mysql.create.engine.sql`
